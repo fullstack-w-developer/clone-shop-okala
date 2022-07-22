@@ -9,7 +9,7 @@ export default async (
 ) => {
   switch (req.method) {
     case "POST":
-      return LoginFun(req, res);
+       LoginFun(req, res);
       break;
   }
 };
