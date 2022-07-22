@@ -1,4 +1,3 @@
-import { OffProduct } from "./../../components/offProduct/data";
 import { NextApiRequest, NextApiResponse } from "next";
 import OffProductsModel from "../../models/offProducts";
 import connnectDB from "../../utils/connectDB";
