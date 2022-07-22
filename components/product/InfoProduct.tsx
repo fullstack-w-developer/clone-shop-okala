@@ -24,7 +24,7 @@ const InfoProduct = () => {
   }, [router.query]);
 
   const closeModal = async () => {
-   await router.push("/");
+    await router.push("/");
     setOpen(!open);
   };
   return (
@@ -35,11 +35,14 @@ const InfoProduct = () => {
         overlayClassName={style.Overlay}
         onRequestClose={closeModal}
       >
-        <InfoMobile
-          product={product}
-          closeModal={closeModal}
-        />
-        {}
+       
+          <InfoMobile
+            product={product}
+            closeModal={closeModal}
+            isLoading={isLoading}
+          />
+        
+
         <MdInfoProduct
           product={product}
           closeModal={closeModal}

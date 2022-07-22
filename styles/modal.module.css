@@ -12,6 +12,13 @@
 
   }
 
+   @media all and (max-width:768px){
+    .Modal{
+      border-radius: 0 !important;
+      overflow: auto !important;
+    }
+   }
+
   .Overlay {
     position: fixed;
     top: 0;

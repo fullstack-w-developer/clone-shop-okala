@@ -1,10 +1,11 @@
 import Image from "next/image";
 import React from "react";
 import ReactSlider from "react-slick";
-import { OffProduct } from "../offProduct/data";
 import { FaRegHeart } from "react-icons/fa";
-
-const Slider = () => {
+interface props{
+  product: any
+}
+const Slider = ({product}:props) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -19,7 +20,7 @@ const Slider = () => {
           {...settings}
           className="mt-5 w-[90%] mx-auto"
         >
-          {OffProduct[3].img.map(
+          {product.img.map(
             (item: any, index: number) => {
               return (
                 <div
