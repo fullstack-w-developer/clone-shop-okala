@@ -2,20 +2,149 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face{
+@font-face {
   font-family: "yekan";
   src: url("../assests/fonts/IRANYekanBold.ttf");
 }
-@font-face{
+@font-face {
   font-family: "reqularyekan";
   src: url("../assests/fonts/IRANYekanRegular.ttf");
+}
+@font-face {
+  font-family: "extrayekan";
+  src: url("../assests/fonts/IRANYekanExtraBold.ttf");
 }
 
 @layer base {
   body {
-    direction: rtl;
-    font-family:"reqularyekan"
+    direction: rtl !important;
+    font-family: "reqularyekan";
+    overflow-x: hidden;
   }
 }
 
+@layer components {
+  .item-sidebar {
+    @apply text-[0.85rem] yekanBold text-gray-700;
+  }
+  .child-item-sidebar {
+    @apply text-[0.70rem] yekanBold text-gray-600;
+  }
+  .scroll-sidebar::-webkit-scrollbar {
+    width: 2px;
+  }
+  .scroll-sidebar::-webkit-scrollbar-track {
+    @apply bg-gray-200;
+  }
+  .scroll-sidebar::-webkit-scrollbar-thumb {
+    @apply bg-gray-400;
+  }
+  .itemTime {
+    @apply bg-white px-3 py-2 text-sm yekanBold rounded-lg  lg:px-3 lg:py-3 lg:rounded-xl text-slate-600 lg:text-lg;
+  }
+  .shadow-id-product {
+    box-shadow: 0 0 10px 4px #00000010;
+  }
+  .menu-auth > li {
+    @apply hover:text-gray-900;
+  }
+  
+}
 
+.yekanBold {
+  font-family: "yekan";
+}
+.extrayekan {
+  font-family: "extrayekan";
+}
+
+.box {
+  column-count: 5;
+  column-fill: auto;
+}
+
+@media all and (max-width: 1024px) {
+  .box {
+    column-count: 6;
+  }
+}
+
+.ad {
+  height: calc(49vh / 3) !important;
+}
+.ad:nth-child(2) {
+  margin: 2.8vh 0 !important;
+}
+
+.ReactCollapse--collapse {
+  transition: height 100ms;
+}
+
+.container-logo {
+  background-image: url("./../assests/images/bg-authLogo.jpg");
+  background-position: unset;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: padding-box;
+}
+.muirtl-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+  font-size: 14px !important ;
+  font-family: "reqularyekan" !important;
+}
+
+.custom-styles {
+  --ReactInputVerificationCode-itemWidth: 2.5rem;
+  --ReactInputVerificationCode-itemHeight: 3.5rem;
+  border: 1px solid #5c9798;
+  border-radius: 10px;
+  padding: 0.25rem;
+}
+.custom-styles > div {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: -11px;
+
+  flex-direction: row-reverse;
+}
+.custom-styles > div > div > {
+  margin-top: 0.9rem !important;
+}
+.custom-styles > div > div::after {
+  top: 50px !important;
+}
+.custom-styles .ReactInputVerificationCode__item {
+  position: relative;
+  color: #262626;
+  font-weight: 500;
+}
+
+.custom-styles .ReactInputVerificationCode__item,
+.custom-styles .ReactInputVerificationCode__item.is-active {
+  box-shadow: none;
+}
+
+.custom-styles .ReactInputVerificationCode__item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 2px;
+  background-color: #ebebeb;
+  transition: background-color 0.2s ease-out;
+}
+
+.custom-styles
+  .ReactInputVerificationCode__item.is-active:after {
+  background-color: #5c9798;
+}
+
+
+/* @media all and (max-width: 768px) {
+  .react-slick-slider>div > div > div > div>div >span{
+    height:100% !important;
+  }
+  
+} */

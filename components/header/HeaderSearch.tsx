@@ -6,7 +6,7 @@ interface props {
 const HeaderSearch = ({ className }: props) => {
   return (
     <div
-      className={`flex-1 flex items-center border p-3 rounded-2xl ${className}`}
+      className={`flex-1 flex items-center border p-3 rounded-2xl  ${className}`}
     >
       <FiSearch size={25} className="text-gray-600 ml-2" />
       <input

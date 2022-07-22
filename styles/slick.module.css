@@ -1,0 +1,51 @@
+.button__bar {
+    position: absolute;
+    bottom: -5% !important;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  @media all and (max-width: 768px) {
+    .button__bar{
+      top: 88% !important;
+    }
+  }
+  .button__bar li {
+    list-style: none;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 3px;
+    padding: 0;
+  }
+  
+  .button__bar li button {
+    
+    background: #00000030;
+    color: transparent;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+  }
+  
+  @media all and (max-width: 768px) {
+    .button__bar li button {
+      width:8px;
+      height:8px
+    }
+    
+  }
+  
+  .button__bar li button:hover,
+  .button__bar li button:focus {
+    background: #00000050;
+    outline: 0;
+  }
+  
+  .slick-slide img {
+    border: 5px solid #fff;
+    display: block;
+    margin: auto;
+  }
+  
