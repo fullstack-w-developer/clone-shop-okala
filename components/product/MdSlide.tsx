@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { AiOutlineStar } from "react-icons/ai";
 import { FaRegHeart } from "react-icons/fa";
 import { GoPlusSmall } from "react-icons/go";
-import { OffProduct } from "../offProduct/data";
 import Other from "./../../assests/images/other.svg";
 import TabsProduct from "./TabsProduct";
 interface props {
