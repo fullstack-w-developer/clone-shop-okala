@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import ReactSlider from "react-slick";
-import { OffProduct } from "../offProduct/data";
 import { FaRegHeart } from "react-icons/fa";
 
 const Slider = () => {
