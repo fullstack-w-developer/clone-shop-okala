@@ -69,15 +69,13 @@ const Header = () => {
   return (
     <>
 
-      <div
+      <header
         className={`w-full sticky top-0 !z-[9999] bg-white ${
           scrollDir === "down" && "shadow-md"
         }`}
       >
-        {" "}
-        {/* header  */}
         {/* header top */}
-        <header
+        <div
           className={` w-full xl:w-[85%] mx-auto shadow-md z-50  lg:shadow-none px-3 flex justify-between items-center gap-11 xl:gap-32 `}
         >
           {/* menu button mobile devices */}
@@ -102,9 +100,9 @@ const Header = () => {
 
           {/* button login && cart && header left */}
           <HeaderLeft />
-        </header>
+        </div>
         {/* header bootom */}
-      </div>
+      </header>
       <div className={`w-full relative  !z-[999] bg-white pb-4 lg:pb-10 `}>
         <div className="w-full xl:w-[85%] mx-auto">
           <div className=" pt-4 lg:pt-10  flex flex-col px-3 lg:flex-row lg:items-center gap-6 lg:gap-14">
